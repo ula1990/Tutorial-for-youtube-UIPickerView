@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		C00F9F4921159163004DF46F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9F4821159163004DF46F /* AppDelegate.swift */; };
-		C00F9F4B21159163004DF46F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9F4A21159163004DF46F /* ViewController.swift */; };
 		C00F9F4E21159163004DF46F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00F9F4C21159163004DF46F /* Main.storyboard */; };
 		C00F9F5021159166004DF46F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C00F9F4F21159166004DF46F /* Assets.xcassets */; };
 		C00F9F5321159167004DF46F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00F9F5121159167004DF46F /* LaunchScreen.storyboard */; };
 		C00F9F5E21159167004DF46F /* NewProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9F5D21159167004DF46F /* NewProjectTests.swift */; };
 		C00F9F6921159167004DF46F /* NewProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9F6821159167004DF46F /* NewProjectUITests.swift */; };
+		C00F9F7721159C9C004DF46F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9F7621159C9C004DF46F /* MainVC.swift */; };
+		C00F9F792115A166004DF46F /* SelectNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9F782115A166004DF46F /* SelectNumberVC.swift */; };
+		C00F9F7C2115A2F1004DF46F /* SelectNumberPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9F7B2115A2F1004DF46F /* SelectNumberPicker.swift */; };
+		C00F9F7F2115A3E5004DF46F /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9F7E2115A3E5004DF46F /* ContainerView.swift */; };
+		C00F9F812115A581004DF46F /* PickerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9F802115A581004DF46F /* PickerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		C00F9F4521159163004DF46F /* NewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00F9F4821159163004DF46F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C00F9F4A21159163004DF46F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C00F9F4D21159163004DF46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C00F9F4F21159166004DF46F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C00F9F5221159167004DF46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		C00F9F6421159167004DF46F /* NewProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00F9F6821159167004DF46F /* NewProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectUITests.swift; sourceTree = "<group>"; };
 		C00F9F6A21159167004DF46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C00F9F7621159C9C004DF46F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		C00F9F782115A166004DF46F /* SelectNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNumberVC.swift; sourceTree = "<group>"; };
+		C00F9F7B2115A2F1004DF46F /* SelectNumberPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNumberPicker.swift; sourceTree = "<group>"; };
+		C00F9F7E2115A3E5004DF46F /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		C00F9F802115A581004DF46F /* PickerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				C00F9F4821159163004DF46F /* AppDelegate.swift */,
-				C00F9F4A21159163004DF46F /* ViewController.swift */,
+				C00F9F7D2115A362004DF46F /* Subclasses */,
+				C00F9F7A2115A2CE004DF46F /* Controllers */,
 				C00F9F4C21159163004DF46F /* Main.storyboard */,
 				C00F9F4F21159166004DF46F /* Assets.xcassets */,
 				C00F9F5121159167004DF46F /* LaunchScreen.storyboard */,
@@ -123,6 +132,25 @@
 				C00F9F6A21159167004DF46F /* Info.plist */,
 			);
 			path = NewProjectUITests;
+			sourceTree = "<group>";
+		};
+		C00F9F7A2115A2CE004DF46F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C00F9F7621159C9C004DF46F /* MainVC.swift */,
+				C00F9F782115A166004DF46F /* SelectNumberVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C00F9F7D2115A362004DF46F /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				C00F9F7B2115A2F1004DF46F /* SelectNumberPicker.swift */,
+				C00F9F7E2115A3E5004DF46F /* ContainerView.swift */,
+				C00F9F802115A581004DF46F /* PickerExt.swift */,
+			);
+			path = Subclasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C00F9F4B21159163004DF46F /* ViewController.swift in Sources */,
+				C00F9F7F2115A3E5004DF46F /* ContainerView.swift in Sources */,
+				C00F9F812115A581004DF46F /* PickerExt.swift in Sources */,
 				C00F9F4921159163004DF46F /* AppDelegate.swift in Sources */,
+				C00F9F792115A166004DF46F /* SelectNumberVC.swift in Sources */,
+				C00F9F7C2115A2F1004DF46F /* SelectNumberPicker.swift in Sources */,
+				C00F9F7721159C9C004DF46F /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
