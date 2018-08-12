@@ -23,7 +23,8 @@ extension SelectNumberVC: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        //amazing code after we already selected something
+        NotificationCenter.default.post(name: .selectedNumber, object: self)
+        receivedNumber = arrayOfNumbers[row]
         print(arrayOfNumbers[row])
     }
     
